@@ -1,0 +1,116 @@
+*{
+    margin:0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+body {
+    font-size: 20px;
+    overflow-x: hidden;
+    color: white;
+    font-family: 'Flamenco', cursive;
+}
+header{
+    background-repeat: no-repeat;
+   background-image:linear-gradient(rgba(0,0,0,0.8),rgba(0,0,0,0.8)),url("../images/image9.jpg"); 
+   background-size: cover;
+   image-rendering: crisp-edges;
+ image-rendering: -moz-crisp-edges;          /* Firefox */
+ image-rendering: -o-crisp-edges;            /* Opera */
+ image-rendering: -webkit-optimize-contrast; /* Webkit (non-standard naming)*/
+ -ms-interpolation-mode: nearest-neighbor; 
+    height: 100vh;
+    background-repeat: no-repeat;
+}
+/* find out what it does */
+.clearfix:after {
+    content:".";
+    visibility: hidden;
+    display:block;
+    height:0px;
+    clear:both;
+}
+.row{
+    max-width:1180px;
+    margin: 0 auto;
+}
+.logo{
+    float:left;
+    margin-top: 20px;
+    height: 120px;
+    width: auto;
+}
+.main-nav{
+    float: right;
+    margin-top:60px;
+}
+.main-nav li{
+    list-style: none;
+    display: inline-block;
+    margin-left:40px;
+}
+.main-nav li a{
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 90%;
+    color: #fff;
+    padding: 5px 0;
+    font-weight: 100;
+}
+.main-nav li a:hover{
+    border-bottom:2px solid #CD853F;
+}
+.button{
+    display: inline-block;
+    padding:8px 20px;
+    margin-bottom: 8px;
+    font-weight: lighter;
+    text-decoration: none;
+    text-transform: uppercase;
+    border-radius: 200px;
+    background-color: transparent;
+    color: 	#CD853F;
+    border: 1px solid 	#CD853F;
+    width: 25%;
+    text-align: center;
+    font-size: 20px;
+    overflow-x: hidden;
+   
+    font-family: 'Flamenco', cursive;
+}
+.regbutton{
+    display: inline-block;
+    padding:10px 30px;
+    font-weight: lighter;
+    text-decoration: none;
+    text-transform: uppercase;
+    border-radius: 200px;
+    background-color:transparent;
+    color: #fff;
+    border: 1px solid #fff;
+    width: 25%;
+    text-align: center;
+    font-size: 20px;
+    overflow-x: hidden;
+    color: white;
+    font-family: 'Flamenco', cursive;
+    margin-top: 8px;
+}
+#but{
+    text-transform: uppercase;
+    font-weight: lighter;
+    text-decoration: none;
+    margin: 35px;
+    color: 	#CD853F;
+   
+
+
+}
+.main_form{
+    width: 1180px;
+    position: absolute;
+  
+    top: 50%;
+    left: 80%;
+    transform: translate(-50%,-50%);
+
+}
