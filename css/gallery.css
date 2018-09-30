@@ -1,0 +1,70 @@
+body, #slide-slider,.wrap, .slide-content{
+    margin: 0;
+    padding: 0;
+    font-family: 'Flamenco', cursive;
+    width: 100%;
+    /* means 100% of all slices of the fuul screen */
+    height: 100vh;
+    /* we don't wanna any horizontal scroll bars */
+    /* The overflow property specifies whether to clip content or 
+    to add scrollbars when 
+    an element's content is too big to fit in a specified area. */
+    /* scroll, hidden, auto, visible */
+    overflow-x: hidden;
+     
+}
+.wrap{
+    position: relative;
+}
+.slide{
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.slider1{
+    background-image: url("../images/image10.jpg");
+    
+}
+.slider2{
+    background-image: url("../images/image11.jpeg");
+}
+.slider3{
+    background-image: url("../images/image12.jpg");
+}
+.slide-content{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.slide-content span{
+    font-size: 5rem;
+    /* rem is a relative unit, means 
+    we want it to be 5 times of the root element,
+    which is by deafault 60px */
+    color: #fff;
+}
+.arrow{
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    margin-top: -35px;
+    width: 0;
+    height: 0;
+    border-style: solid;
+}
+
+#arrow-left{
+    border-width: 30px 40px 30px 0px;
+    /* to create a triangle we give it only one size color property */
+    border-color: transparent #fff transparent transparent;
+    left:0;
+    margin-left: 30px;
+}
+#arrow-right{
+    border-width: 30px 0 30px 40px;
+    border-color: transparent transparent transparent #fff;
+    right:0;
+    margin-right: 30px;
+}
